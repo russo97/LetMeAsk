@@ -1,0 +1,125 @@
+
+#page-auth {
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+
+  aside {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 120px 80px;
+
+    color: #fff;
+    background-color: #835afd;
+
+    img {
+      max-width: 320px;
+    }
+
+    strong {
+      margin-top: 16px;
+      line-height: 2.625rem;
+      font: 700 2.25rem "Poppins", sans-serif;
+    }
+
+    p {
+      color: #f8f8f8;
+      margin-top: 16px;
+      line-height: 2rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  main {
+    flex: 8;
+
+    padding: 0 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+
+    > img {
+      align-self: center;
+    }
+
+    form {
+      input {
+        height: 50px;
+        padding: 0 16px;
+        border-radius: .5rem;
+        background-color: #fff;
+        border: solid 1px #a8a8b3;
+      }
+
+      button {
+        margin-top: 16px;
+      }
+
+      input,
+      button {
+        width: 100%;
+      }
+    }
+
+    .create-room {
+      border: 0;
+      color: #fff;
+      height: 50px;
+      cursor: pointer;
+      margin-top: 64px;
+      font-weight: 500;
+      border-radius: .5rem;
+      transition: filter .2s;
+      background-color: #ea4335;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin-right: 8px;
+      }
+
+      &:hover {
+        filter: brightness(.9);
+      }
+    }
+
+    .separator {
+      color: #a8a8b3;
+      font-size: .875rem;
+
+      margin: 32px 0;
+      display: flex;
+      align-items: center;
+
+      &::after,
+      &::before {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background-color: #a8a8b3;
+        margin-right: 16px;
+      }
+
+      &::after {
+        margin-left: 16px;
+        margin-right: 0px;
+      }
+    }
+  }
+}
